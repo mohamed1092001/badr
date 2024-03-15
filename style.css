@@ -136,4 +136,12 @@ section:nth-child(1)~section .box {
 
     }
 
+    body {
+    padding: 20px 0px;
+}
+
+section {
+    width: 90%;
+}
+
 }
