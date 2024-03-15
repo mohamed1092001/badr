@@ -99,10 +99,12 @@ select {
 .box p {
     width: 100%;
     padding: 0px 20px;
-    height: 30px;
+    min-height: 30px;
     border-radius: 4px;
-    line-height: 30px;
     color: #1cc88a;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 fieldset {
