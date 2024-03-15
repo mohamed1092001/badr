@@ -1,0 +1,139 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    padding: 30px 0px;
+}
+
+section {
+    width: 80%;
+    margin: auto;
+    box-shadow: 0px 0px 3px #00000055, 0px 0px 30px #22222224, inset 0px 0px 90px #4c4c4c0d;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #4e73df;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #858796;
+    font-weight: 400;
+}
+
+section .box {
+    border: solid 1px #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #28282832;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+
+.box .inp-con {
+    padding: 20px;
+    width: calc((100% - 20px)/2);
+    text-align: left;
+    border-radius: 6px;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15) !important;
+    background-color: #fff;
+}
+
+.box .inp-con:nth-child(odd) {
+    border-left: .25rem solid #4e73df !important;
+}
+
+.box .inp-con:nth-child(even) {
+    border-left: .25rem solid #36b9cc !important;
+}
+
+.box .inp-con label {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.box .inp-con input,
+select {
+    width: 100%;
+    border: solid 1px #ddd;
+    outline-color: #4e73df;
+    padding: 15px;
+    display: block;
+    border-radius: 5px;
+    text-transform: capitalize;
+    color: #4e73df;
+    font-weight: bold;
+}
+
+.box .inp-con input::placeholder {
+    font-weight: 400;
+}
+
+.box button {
+    background-color: #4e73df;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: block;
+    margin: auto;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.box p {
+    width: 100%;
+    padding: 0px 20px;
+    height: 30px;
+    border-radius: 4px;
+    line-height: 30px;
+    color: #1cc88a;
+}
+
+fieldset {
+    border-radius: 6px;
+    border: solid 1px #ddd;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+}
+
+fieldset legend {
+    text-transform: uppercase;
+    padding: 7px 12px;
+    border: solid 1px #ddd;
+    margin-left: 15px;
+    border-radius: 3px;
+}
+
+section:nth-child(1)~section .box {
+    margin-bottom: 20px;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+
+@media (min-width:0px) and (max-width:800px) {
+    .inp-con {
+        width: 100% !important;
+
+    }
+
+}
